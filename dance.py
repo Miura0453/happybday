@@ -1,25 +1,23 @@
 import time
 
 def dance_a(name,spaces):
-    print("     ","      / ","  *FELIZ{}CUMPLE* ".format(spaces), "\      ")
+    print("     ","      / "," *FELIZ{}NAVIDAD* ".format(spaces), "\      ")
     print("     ","(°u°)/","       *{}*         ".format(name)," \(°u°)")
     print("     ","<( )","             *{}*      ".format(name)," ( )>")
     print("     "," /  \ ","  *PASALA{}SUPER*     ".format(spaces),"/  \ ")
-    print("")
 
 def dance_b(name,spaces):
-    print("    ","\      ","    *FELIZ{}CUMPLE*    ".format(spaces),"    / ")
+    print("    ","\      ","   *FELIZ{}NAVIDAD*    ".format(spaces),"    / ")
     print("    "," \(°u°)","          *{}*       ".format(name),"(°u°)/")
     print("     "," ( )>","       *{}*            ".format(name),"<( )",)
     print("     "," /  \ ","  *PASALA{}SUPER*     ".format(spaces),"/  \ ")
-    print("")
 
 def dance_man(x,y):
-    for a in range(50):
+    for a in range(200):
         dance_a(x,y)
-        time.sleep(.3)
+        time.sleep(.5)
         dance_b(x,y)
-        time.sleep(.3)
+        time.sleep(.5)
 
 def get_spaces(x):
     x=x.upper()
